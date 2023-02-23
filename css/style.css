@@ -4,10 +4,11 @@
     position: relative;
 }
 
-body{
+body {
     background-color: #000;
 }
-video{
+
+video {
     transform-origin: center center;
     position: absolute;
     top: 0;
@@ -22,7 +23,6 @@ video{
 .header_wrapper {
     position: relative;
 }
-
 
 
 .banner {
@@ -40,7 +40,8 @@ video{
 .logo {
     padding: 38px 0 0 1px;
 }
-img{
+
+img {
     border-radius: 35%;
 }
 
@@ -171,7 +172,7 @@ img{
     font-size: 13px;
     font-weight: 600;
     font-style: normal;
-      letter-spacing: 0.35px;
+    letter-spacing: 0.35px;
     text-align: center;
     text-transform: uppercase;
     line-height: normal;
@@ -267,7 +268,8 @@ input[type="checkbox"]:checked + label:after {
         transform: rotateX(8turn) rotateY(8turn);
     }
 }
-.container{
+
+.container {
     margin: 0 auto;
     max-width: 1000px;
     min-width: 500px;
@@ -275,29 +277,32 @@ input[type="checkbox"]:checked + label:after {
     position: relative;
     height: 500px;
 }
-.container>div:first-child{
+
+.container > div:first-child {
     position: absolute;
     width: 50px;
     padding: 25px 0 25px 0;
     top: 50px;
     left: 50px;
-    animation:  rotate 5s cubic-bezier(1, 0.07, 0.89, 1.41) infinite;
+    animation: rotate 5s cubic-bezier(1, 0.07, 0.89, 1.41) infinite;
     background-color: red;
 }
-.container>div:nth-child(n+2){
+
+.container > div:nth-child(n+2) {
     top: 100px;
     left: 100px;
     position: absolute;
 
 
 }
-.container>div:nth-child(n+3) {
+
+.container > div:nth-child(n+3) {
     top: 150px;
     left: 150px;
     position: absolute;
 }
 
-audio{
+audio {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -336,4 +341,186 @@ audio{
 
 :-ms-input-placeholder {
     font-style: italic;
+}
+
+@media screen and (max-width: 1120px) and
+(min-width: 200px) {
+    video {
+        transform-origin: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        min-width: auto;
+        height: auto;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .wrapper {
+        width: auto;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+    }
+
+    .logo {
+        padding: 38px 0 0 1px;
+    }
+
+    img {
+        border-radius: 35%;
+    }
+
+    .logo_text {
+        /*padding: 44px 0 0 16px;*/
+        /*width: auto;*/
+        min-width: auto;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1.08px;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        line-height: normal;
+        margin: 30px;
+    }
+
+    .banner_text1 {
+        margin: 0 0 0 0;
+        width: auto;
+        min-width: auto;
+        color: #ffffff;
+        font-size: 72px;
+        font-weight: 400;
+        letter-spacing: 1.08px;
+        text-align: left;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 5;
+    }
+
+    .banner_text2 {
+        width: auto;
+        min-width: auto;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+        line-height: normal;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin: 0 0 50px 4px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .banner_text3 {
+        width: auto;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        line-height: normal;
+        /*padding: 62px 0 0 0;*/
+        /*margin: -1px 0 0 7.6px;*/
+    }
+
+    .finder {
+        /*margin: 30px 0 5px 10px;*/
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .wrapper > .d-flex:first-child {
+        flex-wrap: wrap;
+    }
+
+    .wrapper > .d-flex:nth-child(n+2) {
+        flex-wrap: wrap;
+    }
+
+
+    .finder_text {
+        background-image: linear-gradient(to top, #af1c1a 0%, #af1c1a 100%);
+        border: none;
+        padding: 25px 0 25px 0;
+        width: auto;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .note-content {
+        margin: 10px auto 10px auto;
+        width: 200px;
+        border-radius: 25px 0 25px 0;
+        padding: 20px 0 55px 0;
+        background-color: #e0ebeb;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    audio {
+        position: absolute;
+        left: 100%;
+        width: auto;
+        z-index: 1;
+        transform: rotate(270deg);
+    }
+
+    #input_squatting {
+        width: 100%;
+        color: #fefefe;
+        background: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.35px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: normal;
+        padding: 9px 0 10px 0;
+    }
+
+    #input_weight {
+        width: 100%;
+        color: beige;
+        background: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.35px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: normal;
+        padding: 9px 0 10px 0;
+    }
+
+    #input_bench {
+        width: 100%;
+        background: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+        color: #fefefe;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.35px;
+    }
 }
