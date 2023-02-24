@@ -8,7 +8,7 @@ function result() {
     let input_bench = document.getElementById("input_bench").value;
     let input_deadlift = document.getElementById("input_deadlift").value;
     note.innerHTML = `Your answer?`;
-    note2.innerHTML = `${resultTitle(gender,input_weight,input_squatting,input_bench,input_deadlift)}`;
+    note2.innerHTML = `${getTitleInPowerliftingUkraine(gender,input_weight,input_squatting,input_bench,input_deadlift)}`;
 }
 //Сделал два чтобы сбрасывался результат
 function resultWeak() {
